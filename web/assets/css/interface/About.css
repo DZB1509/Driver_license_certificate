@@ -1,0 +1,373 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Mar 23, 2025, 5:10:31 PM
+    Author     : ADMIN
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url("https://sadesign.vn/pictures/picfullsizes/2024/11/30/ybd1732939646.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: rgba(39, 39, 39, 0.4);
+    padding: 20px;
+    width: 100%;
+    height: auto;
+}
+
+/* Navigation Bar */
+.nav {
+    position: fixed;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10vh;
+    line-height: 10vh;
+    background: linear-gradient(rgba(39, 39, 39, 0.6), transparent);
+    z-index: 100;
+    padding: 0 2vw;
+}
+
+.nav-logo {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-left: 2vw;
+}
+
+.nav-logo p {
+    margin: 0;
+}
+
+.nav-menu ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+    margin: 0 1.5vw;
+}
+
+.nav-menu ul li .link {
+    text-decoration: none;
+    font-weight: 500;
+    color: #fff;
+    padding-bottom: 0.5vh;
+    font-size: 1rem;
+}
+
+.link:hover, .active {
+    border-bottom: 2px solid #fff;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    margin-right: 2vw;
+}
+
+.nav-button .btn {
+    width: 8vw;
+    height: 5vh;
+    font-weight: 500;
+    background: rgba(255, 255, 255, 0.4);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-left: 1vw;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-menu-btn {
+    display: none;
+}
+
+/* About Container */
+.about-container {
+    width: 90%;
+    max-width: 800px;
+    margin-top: 15vh;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.about-header {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+.about-content h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.about-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Forgot Password Form */
+.form-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot-password-container {
+    width: 90%;
+    max-width: 500px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+}
+
+.top {
+    text-align: center;
+    width: 100%;
+}
+
+.top span {
+    color: #fff;
+    font-size: 0.9rem;
+    padding: 1vh 0;
+    display: block;
+}
+
+.top span a {
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+}
+
+.top span a:hover {
+    text-decoration: underline;
+}
+
+header {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 1.5vh 0 3vh 0;
+    font-weight: 600;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 1.5vh;
+    width: 100%;
+}
+
+.input-field {
+    font-size: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    height: 6vh;
+    width: 100%;
+    padding: 0 1vw 0 3.5vw;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    transition: 0.2s ease;
+    box-sizing: border-box;
+    font-size: 1.1rem;
+}
+
+.input-field:hover, .input-field:focus {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+::-webkit-input-placeholder {
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.input-box i {
+    position: absolute;
+    top: 50%;
+    left: 1.5vw;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.submit {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #000;
+    height: 6vh;
+    width: 100%;
+    border: none;
+    border-radius: 25px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    margin-top: 1vh;
+}
+
+.submit:hover {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .nav {
+        height: 8vh;
+        line-height: 8vh;
+    }
+
+    .nav-logo {
+        font-size: 1.5rem;
+    }
+
+    .nav-menu ul li {
+        margin: 0 1vw;
+    }
+
+    .nav-button .btn {
+        width: 10vw;
+        height: 4.5vh;
+        font-size: 0.9rem;
+    }
+
+    .about-container {
+        width: 85%;
+        max-width: 450px;
+    }
+
+    .about-header {
+        font-size: 1.8rem;
+    }
+
+    .about-content h3 {
+        font-size: 1.3rem;
+    }
+
+    .about-content p {
+        font-size: 0.8rem;
+    }
+
+    .forgot-password-container {
+        width: 85%;
+        max-width: 450px;
+    }
+
+    header {
+        font-size: 1.8rem;
+        padding: 1vh 0 2.5vh 0;
+    }
+
+    .input-field {
+        height: 5.5vh;
+        font-size: 1rem;
+    }
+
+    .submit {
+        height: 5.5vh;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-menu ul {
+        display: none;
+    }
+
+    .nav-button {
+        margin-right: 1vw;
+    }
+
+    .nav-button .btn {
+        width: 12vw;
+        height: 4vh;
+        font-size: 0.8rem;
+    }
+
+    .about-container {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .about-header {
+        font-size: 1.5rem;
+    }
+
+    .about-content h3 {
+        font-size: 1.2rem;
+    }
+
+    .about-content p {
+        font-size: 0.7rem;
+    }
+
+    .forgot-password-container {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    header {
+        font-size: 1.5rem;
+        padding: 0.5vh 0 2vh 0;
+    }
+
+    .input-field {
+        height: 5vh;
+        font-size: 0.9rem;
+    }
+
+    .submit {
+        height: 5vh;
+        font-size: 0.9rem;
+    }
+}
